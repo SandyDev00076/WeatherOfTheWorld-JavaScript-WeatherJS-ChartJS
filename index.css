@@ -1,0 +1,56 @@
+.container {
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px grey;
+
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+.container:hover {
+    box-shadow: 0 0 15px grey;
+}
+
+.region {
+    font-size: 40px;
+}
+
+.btngroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btncontainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn.btn-dark.getbtn {
+    font-size: 20px;
+    border-radius: 2px;
+    min-width: 700px;
+    letter-spacing: 5px;
+    box-shadow: 0 0 2px grey;
+
+    transition-property: min-width, letter-spacing, border-radius, box-shadow;
+    transition-duration: 0.5s;
+}
+
+.btn.btn-dark.getbtn:hover {
+    min-width: 750px;
+    letter-spacing: 7px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px grey;
+}
+
+.btn.btn-outline-primary.m-1.tempbtn:focus {
+    background-color: #333;
+    color: white;
+}
+
+.btn.btn-outline-success.m-1.tempbtn:focus {
+    background-color: #333;
+    color: white;
+}
