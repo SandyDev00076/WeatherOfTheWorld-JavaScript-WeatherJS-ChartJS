@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/SandyDev00076/WeatherOfTheWorld-JavaScript-WeatherJS-ChartJS/issues"
   },
-  "homepage": "https://github.com/SandyDev00076/WeatherOfTheWorld-JavaScript-WeatherJS-ChartJS#readme"
+  "homepage": "https://github.com/SandyDev00076/WeatherOfTheWorld-JavaScript-WeatherJS-ChartJS#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "requirejs": "^2.3.6"
+  }
 }

@@ -19,6 +19,10 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp"
         crossorigin="anonymous"></script>
+    <!-- Jquery Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -34,17 +38,23 @@
             <div class="input-group-prepend">
                 <span style="font-size: 20px" class="input-group-text" id="basic-addon1"><i class="fas fa-map-pin"></i></span>
             </div>
-            <input type="text" style="font-size: 20px" class="form-control" placeholder="ZipCode / Name" aria-label="Username"
-                aria-describedby="basic-addon1">
+            <input id="loc" type="text" style="font-size: 20px" class="form-control" placeholder="ZipCode / Name"
+                aria-label="locname" aria-describedby="basic-addon1">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false"><span id="droptitle">Country</span></button>
+                <div id="dropdown" class="dropdown-menu"></div>
+            </div>
         </div>
         <div class="btngroup">
-            <button type="button" class="btn btn-outline-primary m-1 tempbtn" style="flex: 1">Farenheit</button>
-            <button type="button" class="btn btn-outline-success m-1 tempbtn" style="flex: 1">Celsius</button>
+            <button type="button" onclick="changeMode('F')" class="btn btn-outline-primary m-1 tempbtn" style="flex: 1">Farenheit</button>
+            <button type="button" onclick="changeMode('C')" class="btn btn-outline-success m-1 tempbtn" style="flex: 1">Celsius</button>
         </div>
     </div>
     <div class="btncontainer">
-        <button type="button" class="btn btn-dark getbtn">Get The Weather Forecast</button>
+        <button type="button" onclick="getForecast()" class="btn btn-dark getbtn">Get The Weather Forecast</button>
     </div>
+
     <script src="index.js"></script>
 </body>
 
