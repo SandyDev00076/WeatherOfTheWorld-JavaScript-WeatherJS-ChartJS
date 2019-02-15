@@ -11,6 +11,13 @@
     box-shadow: 0 0 15px grey;
 }
 
+.chartcontainer {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 500px;
+    height: 500px;
+}
+
 .region {
     font-size: 40px;
 }
